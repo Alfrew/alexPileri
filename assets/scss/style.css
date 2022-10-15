@@ -1522,7 +1522,8 @@ body {
 #meBG {
   position: absolute;
   height: 120%;
-  width: 150%;
+  width: 100%;
+  left: -6px;
   background-color: #004c82;
   transform: rotate(-1deg);
   z-index: -1;
@@ -1539,6 +1540,7 @@ body {
 }
 
 #contacts {
+  background-color: #004c82;
   position: relative;
   min-height: 400px;
   z-index: 1;
@@ -1547,7 +1549,8 @@ body {
 #contactsBG {
   position: absolute;
   height: 120%;
-  width: 150%;
+  width: 100%;
+  left: -4px;
   background-color: #004c82;
   transform: rotate(1deg);
   z-index: -1;
