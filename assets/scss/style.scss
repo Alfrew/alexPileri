@@ -1,5 +1,7 @@
 @import "alfrewDesign/all";
-
+body {
+  overflow-x: hidden;
+}
 .navbar-expand-xl {
   background-color: black;
   color: white;

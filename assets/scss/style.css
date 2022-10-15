@@ -1449,6 +1449,10 @@ a {
   opacity: 1;
 }
 
+body {
+  overflow-x: hidden;
+}
+
 .navbar-expand-xl {
   background-color: black;
   color: white;
