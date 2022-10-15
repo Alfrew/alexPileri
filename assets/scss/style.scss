@@ -1,0 +1,119 @@
+@import "alfrewDesign/all";
+
+.navbar-expand-xl {
+  background-color: black;
+  color: white;
+  .nav-item a,
+  a {
+    color: white;
+  }
+  .dot {
+    background-color: $main-color-shade-transpa;
+  }
+  .line1,
+  .line2,
+  .line3 {
+    background-color: white;
+  }
+}
+
+#landing {
+  background-image: linear-gradient(#00000060, #00000060), url(https://free4kwallpapers.com/uploads/originals/2020/11/15/sunset-vector-wallpaper.jpg);
+  background-size: cover;
+  background-position: center;
+  background-color: $main-color-tint;
+  height: 720px;
+  max-height: 800;
+  position: relative;
+  z-index: 2;
+}
+
+#iconList {
+  height: 48px;
+}
+
+#iconList .bi {
+  font-size: 32px;
+  color: $background-text-contrast;
+  transition: all 300ms;
+}
+
+@include for-size(xl) {
+  #iconList .bi:hover {
+    color: $main-color-tint;
+    font-size: 48px;
+  }
+}
+
+.shadow-background-contrast {
+  text-shadow: 0px 0px 32px $background-text-contrast;
+}
+.shadow-main-contrast {
+  text-shadow: 0px 0px 32px $main-text-contrast;
+}
+
+#me {
+  background-color: $main-color;
+  padding: 40px 0px;
+  min-height: 600px;
+
+  position: relative;
+  z-index: 1;
+}
+#picture {
+  height: 65vh;
+  background-color: $dark-grey;
+  text-align: center;
+}
+#meBG {
+  position: absolute;
+  height: 120%;
+  width: 150%;
+  background-color: $main-color;
+  transform: rotate(-1deg);
+  z-index: -1;
+}
+
+// My work
+#myWork {
+  min-height: 600px;
+  padding: 120px 0px;
+  background-color: $background-color;
+}
+#services .bi {
+  font-size: $font-size-h1;
+}
+
+// Contacts
+#contacts {
+  position: relative;
+  min-height: 400px;
+  z-index: 1;
+}
+#contactsBG {
+  position: absolute;
+  height: 120%;
+  width: 150%;
+  background-color: $main-color;
+  transform: rotate(1deg);
+  z-index: -1;
+}
+
+// Footer
+#footer {
+  position: relative;
+  z-index: 1;
+  background-color: $main-color-shade;
+  min-height: 150px;
+}
+
+#footerList li {
+  margin: 0px 16px;
+  font-size: 20px;
+  color: $main-text-contrast;
+}
+
+#footerList a {
+  color: $background-text-contrast;
+  text-decoration: none;
+}
