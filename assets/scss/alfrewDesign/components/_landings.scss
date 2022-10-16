@@ -1,0 +1,14 @@
+.landing-container {
+  height: 100vh;
+}
+.landing-fixed {
+  position: fixed;
+  z-index: -1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: $main-color-tint;
+  width: 100%;
+  height: 100%;
+}

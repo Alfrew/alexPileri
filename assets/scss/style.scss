@@ -1,8 +1,20 @@
 @import "alfrewDesign/all";
-body {
-  overflow-x: hidden;
+
+.polygonCont {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.navbar-expand-xl {
+.polygon {
+  height: 300px;
+  width: 100%;
+  background-color: blue;
+  clip-path: polygon(0 0, 100% 10%, 100% 90%, 0 100%);
+}
+
+.navbar-expand {
   background-color: black;
   color: white;
   .nav-item a,
@@ -23,64 +35,51 @@ body {
   background-image: linear-gradient(#00000060, #00000060), url(https://free4kwallpapers.com/uploads/originals/2020/11/15/sunset-vector-wallpaper.jpg);
   background-size: cover;
   background-position: center;
-  background-color: $main-color-tint;
-  height: 720px;
-  max-height: 800;
-  position: relative;
-  z-index: 2;
 }
 
 #iconList {
   height: 48px;
-}
 
-#iconList .bi {
-  font-size: 32px;
-  color: $background-text-contrast;
-  transition: all 300ms;
-}
+  .bi {
+    font-size: 32px;
+    color: $background-text-contrast;
+    transition: all 300ms;
 
-@include for-size(xl) {
-  #iconList .bi:hover {
-    color: $main-color-tint;
-    font-size: 48px;
+    @include for-size(xl) {
+      &:hover {
+        color: $main-color-tint;
+        font-size: 48px;
+      }
+    }
   }
 }
 
-.shadow-background-contrast {
-  text-shadow: 0px 0px 32px $background-text-contrast;
+#meContainer {
+  background-color: $main-color;
 }
-.shadow-main-contrast {
-  text-shadow: 0px 0px 32px $main-text-contrast;
-}
-
 #me {
   background-color: $main-color;
   padding: 40px 0px;
   min-height: 600px;
-
-  position: relative;
-  z-index: 1;
 }
 #picture {
   height: 65vh;
   background-color: $dark-grey;
   text-align: center;
 }
-#meBG {
-  position: absolute;
-  height: 120%;
-  width: 100%;
-  left: -6px;
-  background-color: $main-color;
-  transform: rotate(-1deg);
-  z-index: -1;
+.polygon {
+  height: 80px;
+  clip-path: polygon(0 30%, 100% 0, 100% 100%, 0 100%);
+  background-color: black;
+}
+.polygon-down {
+  height: 80px;
+  clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0 70%);
+  background-color: black;
 }
 
 // My work
 #myWork {
-  min-height: 600px;
-  padding: 120px 0px;
   background-color: $background-color;
 }
 #services .bi {
@@ -90,24 +89,11 @@ body {
 // Contacts
 #contacts {
   background-color: $main-color;
-  position: relative;
   min-height: 400px;
-  z-index: 1;
-}
-#contactsBG {
-  position: absolute;
-  height: 120%;
-  width: 100%;
-  left: -4px;
-  background-color: $main-color;
-  transform: rotate(1deg);
-  z-index: -1;
 }
 
 // Footer
 #footer {
-  position: relative;
-  z-index: 1;
   background-color: $main-color-shade;
   min-height: 150px;
 }

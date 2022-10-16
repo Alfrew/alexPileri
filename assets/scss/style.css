@@ -964,20 +964,57 @@ a {
   margin-bottom: 8px;
 }
 
+.py-1 {
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+
 .mb-2 {
   margin-bottom: 16px;
+}
+
+.py-2 {
+  padding-top: 16px;
+  padding-bottom: 16px;
 }
 
 .mb-3 {
   margin-bottom: 24px;
 }
 
+.py-3 {
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+
 .mb-4 {
   margin-bottom: 32px;
 }
 
+.py-4 {
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
 .mb-5 {
   margin-bottom: 40px;
+}
+
+.py-5 {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.bg-main {
+  background-color: #004c82;
+}
+
+.bg-main-shade {
+  background-color: #001727;
+}
+
+.bg-main-shade-transpa {
+  background-color: rgba(0, 23, 39, 0.8);
 }
 
 .h1, .h4, .h3, .h2 {
@@ -1038,6 +1075,14 @@ a {
 
 .color-darker-gray {
   color: #424242;
+}
+
+.shadow-background-contrast {
+  text-shadow: 0px 0px 32px #ffffff;
+}
+
+.shadow-main-contrast {
+  text-shadow: 0px 0px 32px #000000;
 }
 
 .text-center {
@@ -1433,6 +1478,22 @@ a {
     font-size: var(--font-size-h4);
   }
 }
+.landing-container {
+  height: 100vh;
+}
+
+.landing-fixed {
+  position: fixed;
+  z-index: -1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #4d82a8;
+  width: 100%;
+  height: 100%;
+}
+
 .hover-tilt {
   cursor: pointer;
   transition: all 250ms;
@@ -1449,24 +1510,36 @@ a {
   opacity: 1;
 }
 
-body {
-  overflow-x: hidden;
+.polygonCont {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.navbar-expand-xl {
+.polygon {
+  height: 300px;
+  width: 100%;
+  background-color: blue;
+  -webkit-clip-path: polygon(0 0, 100% 10%, 100% 90%, 0 100%);
+          clip-path: polygon(0 0, 100% 10%, 100% 90%, 0 100%);
+}
+
+.navbar-expand {
   background-color: black;
   color: white;
 }
-.navbar-expand-xl .nav-item a,
-.navbar-expand-xl a {
+.navbar-expand .nav-item a,
+.navbar-expand a {
   color: white;
 }
-.navbar-expand-xl .dot {
+.navbar-expand .dot {
   background-color: rgba(0, 23, 39, 0.8);
 }
-.navbar-expand-xl .line1,
-.navbar-expand-xl .line2,
-.navbar-expand-xl .line3 {
+.navbar-expand .line1,
+.navbar-expand .line2,
+.navbar-expand .line3 {
   background-color: white;
 }
 
@@ -1474,43 +1547,31 @@ body {
   background-image: linear-gradient(rgba(0, 0, 0, 0.3764705882), rgba(0, 0, 0, 0.3764705882)), url(https://free4kwallpapers.com/uploads/originals/2020/11/15/sunset-vector-wallpaper.jpg);
   background-size: cover;
   background-position: center;
-  background-color: #4d82a8;
-  height: 720px;
-  max-height: 800;
-  position: relative;
-  z-index: 2;
 }
 
 #iconList {
   height: 48px;
 }
-
 #iconList .bi {
   font-size: 32px;
   color: #ffffff;
   transition: all 300ms;
 }
-
 @media screen and (min-width: 1200px) {
   #iconList .bi:hover {
     color: #4d82a8;
     font-size: 48px;
   }
 }
-.shadow-background-contrast {
-  text-shadow: 0px 0px 32px #ffffff;
-}
 
-.shadow-main-contrast {
-  text-shadow: 0px 0px 32px #000000;
+#meContainer {
+  background-color: #004c82;
 }
 
 #me {
   background-color: #004c82;
   padding: 40px 0px;
   min-height: 600px;
-  position: relative;
-  z-index: 1;
 }
 
 #picture {
@@ -1519,19 +1580,21 @@ body {
   text-align: center;
 }
 
-#meBG {
-  position: absolute;
-  height: 120%;
-  width: 100%;
-  left: -6px;
-  background-color: #004c82;
-  transform: rotate(-1deg);
-  z-index: -1;
+.polygon {
+  height: 80px;
+  -webkit-clip-path: polygon(0 30%, 100% 0, 100% 100%, 0 100%);
+          clip-path: polygon(0 30%, 100% 0, 100% 100%, 0 100%);
+  background-color: black;
+}
+
+.polygon-down {
+  height: 80px;
+  -webkit-clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0 70%);
+          clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0 70%);
+  background-color: black;
 }
 
 #myWork {
-  min-height: 600px;
-  padding: 120px 0px;
   background-color: #000000;
 }
 
@@ -1541,24 +1604,10 @@ body {
 
 #contacts {
   background-color: #004c82;
-  position: relative;
   min-height: 400px;
-  z-index: 1;
-}
-
-#contactsBG {
-  position: absolute;
-  height: 120%;
-  width: 100%;
-  left: -4px;
-  background-color: #004c82;
-  transform: rotate(1deg);
-  z-index: -1;
 }
 
 #footer {
-  position: relative;
-  z-index: 1;
   background-color: #001727;
   min-height: 150px;
 }
