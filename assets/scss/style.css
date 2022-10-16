@@ -1009,6 +1009,10 @@ a {
   background-color: #004c82;
 }
 
+.bg-background {
+  background-color: #000000;
+}
+
 .bg-main-shade {
   background-color: #001727;
 }
@@ -1489,9 +1493,9 @@ a {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: #4d82a8;
   width: 100%;
   height: 100%;
+  background-color: #4d82a8;
 }
 
 .hover-tilt {
@@ -1562,10 +1566,6 @@ a {
     color: #4d82a8;
     font-size: 48px;
   }
-}
-
-#meContainer {
-  background-color: #004c82;
 }
 
 #me {
