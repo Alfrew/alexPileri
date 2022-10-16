@@ -1,19 +1,5 @@
 @import "alfrewDesign/all";
 
-.polygonCont {
-  width: 100%;
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.polygon {
-  height: 300px;
-  width: 100%;
-  background-color: blue;
-  clip-path: polygon(0 0, 100% 10%, 100% 90%, 0 100%);
-}
-
 .navbar-expand {
   background-color: black;
   color: white;
