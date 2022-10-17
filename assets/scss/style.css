@@ -1190,6 +1190,11 @@ a {
   height: auto;
 }
 
+.cutted-pic {
+  -webkit-clip-path: polygon(0 -50%, 100% 15%, 100% 150%, 0 85%);
+          clip-path: polygon(0 -50%, 100% 15%, 100% 150%, 0 85%);
+}
+
 .line1 {
   position: absolute;
   top: 20px;
