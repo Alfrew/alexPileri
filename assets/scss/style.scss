@@ -17,12 +17,6 @@
   }
 }
 
-#landing {
-  background-image: linear-gradient(#00000060, #00000060), url(https://free4kwallpapers.com/uploads/originals/2020/11/15/sunset-vector-wallpaper.jpg);
-  background-size: cover;
-  background-position: center;
-}
-
 #iconList {
   height: 48px;
 
@@ -41,15 +35,10 @@
 }
 
 #me {
-  background-color: $main-color;
   padding: 40px 0px;
   min-height: 600px;
 }
-#picture {
-  height: 65vh;
-  background-color: $dark-grey;
-  text-align: center;
-}
+
 .polygon {
   height: 80px;
   clip-path: polygon(0 30%, 100% 0, 100% 100%, 0 100%);
@@ -62,16 +51,12 @@
 }
 
 // My work
-#myWork {
-  background-color: $background-color;
-}
 #services .bi {
   font-size: $font-size-h1;
 }
 
 // Contacts
 #contacts {
-  background-color: $main-color;
   min-height: 400px;
 }
 
