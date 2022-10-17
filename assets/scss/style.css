@@ -1517,7 +1517,7 @@ a {
 
 .landing-fixed {
   position: fixed;
-  z-index: -1;
+  z-index: 0;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -1532,12 +1532,17 @@ a {
 
 .landing-video {
   position: fixed;
-  z-index: -2;
+  z-index: -1;
   height: 100%;
   width: 100%;
   background-color: #004c82;
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+.main-content {
+  position: static;
+  z-index: 2;
 }
 
 .hover-tilt {
@@ -1616,7 +1621,6 @@ a {
 }
 
 #footer {
-  background-color: #001727;
   min-height: 150px;
 }
 
