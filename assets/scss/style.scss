@@ -35,8 +35,8 @@
 }
 
 #me {
-  padding: 40px 0px;
-  min-height: 600px;
+  padding: 80px 0px;
+  min-height: 60vh;
 }
 
 .polygon {
@@ -51,13 +51,16 @@
 }
 
 // My work
+#myWork {
+  min-height: 70vh;
+}
 #services .bi {
   font-size: $font-size-h1;
 }
 
 // Contacts
 #contacts {
-  min-height: 400px;
+  min-height: 60vh;
 }
 
 // Footer
