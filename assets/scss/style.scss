@@ -68,15 +68,16 @@
   font-size: $font-size-h1;
 }
 
-#footerList li {
-  margin: 0px 16px;
-  font-size: 20px;
-  color: $main-text-contrast;
-}
-
-#footerList a {
-  color: $background-text-contrast;
-  text-decoration: none;
+#footerList {
+  li {
+    margin: 0px 16px;
+    font-size: 20px;
+    color: $main-text-contrast;
+  }
+  a {
+    color: $background-text-contrast;
+    text-decoration: none;
+  }
 }
 
 #workPic {
