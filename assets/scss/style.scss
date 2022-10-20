@@ -1,5 +1,15 @@
 @import "alfrewDesign/all";
 
+.height-800 {
+  height: 800px;
+}
+.height-600 {
+  height: 600px;
+}
+.height-300 {
+  min-height: 300px;
+}
+
 .navbar-expand {
   background-color: black;
   color: white;
@@ -58,16 +68,6 @@
   font-size: $font-size-h1;
 }
 
-// Contacts
-#contacts {
-  min-height: 60vh;
-}
-
-// Footer
-#footer {
-  min-height: 150px;
-}
-
 #footerList li {
   margin: 0px 16px;
   font-size: 20px;
@@ -77,4 +77,11 @@
 #footerList a {
   color: $background-text-contrast;
   text-decoration: none;
+}
+
+#workPic {
+  background-image: url(../img/CIF_2446.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 100%;
 }

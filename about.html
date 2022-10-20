@@ -5,17 +5,132 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <link rel="stylesheet" href="assets/scss/style.css">
+  <title>About - Alex Pileri</title>
+  <link type="text/css" rel="stylesheet" href="assets/scss/style.css">
+  <link type='text/css' rel='stylesheet'
+    href='https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css'>
 </head>
 
 <body>
+  <header class="sticky-top">
+    <nav class="navbar-expand">
+      <a class="nav-brand" href="index.html"><i class="bi bi-camera-reels"></i></a>
+      <label for="navRoundCheck" class="fixed-top invisible">Burger menu</label>
+      <input id="navRoundCheck" class="nav-check" type="checkbox">
+      <ul class="burger-wrap">
+        <li class="line1"></li>
+        <li class="line2"></li>
+        <li class="line3"></li>
+      </ul>
+      <div class="dot"></div>
+      <div class="navbar-collapse">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link active" aria-current="page" href="about.html">About</a></li>
+          <!-- <li class="nav-item"><a class="nav-link" href="about.html#contacts">Contatti</a></li> -->
+          <li class="nav-item"><a class="nav-link" href="portfolio.html">Portfolio</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
 
-  <div class="polygonCont">
-    <div class="polygon"></div>
+  <main>
+    <!-- ABOUT ME -->
+    <section class="py-3 row align-center justify-evenly">
+      <div class="col-5 col-3-lg mb-4 overflow-y-hidden square-pic cutted-pic">
+        <img class="responsive-pic " src="assets/img/CIF_2446.jpg" alt="Alex Pileri ritratto">
+      </div>
 
+      <div class="col-9 col-4-lg color-black">
+        <h1 class="h1 color-main">Alex Pileri</h1>
+        <h2 class="h3">Videomaker</h2>
+        <p class="body2">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ratione distinctio necessitatibus
+          eaque doloremque
+          placeat consequuntur. Delectus, aliquid accusamus odio necessitatibus ipsum ab, deleniti eaque perspiciatis,
+          error est facere maiores laudantium.</p>
+        <p class="body2">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ratione distinctio necessitatibus
+          eaque doloremque
+          placeat consequuntur. Delectus, aliquid accusamus odio necessitatibus ipsum ab, deleniti eaque perspiciatis,
+          error est facere maiores laudantium.</p>
+      </div>
+
+    </section>
+
+    <!-- SKILLSET -->
+    <section class="d-flex flex-column flex-row-lg align-center bg-main-shade height-600">
+      <div class="col-11 col-6-lg d-flex flex-column align-center justify-around h-100">
+        <h3 class="h2 text-center">Programmi</h3>
+        <p class="body2 col-9">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quibusdam vitae eaque, pariatur
+          odit
+          repellat
+          laboriosam, repellendus voluptatibus incidunt, rerum sit suscipit fuga facere esse deserunt eius laudantium
+          doloribus nulla unde!</p>
+        <div>
+          <div class="d-flex justify-evenly mb-3">
+            <img src="assets/img/premiere.png" class="col-2 round-5 p-1 bg-white" alt="">
+            <img src="assets/img/photoshop.png" class="col-2 round-5 p-1 bg-white" alt="">
+            <img src="assets/img/afterEffects.png" class="col-2 round-5 p-1 bg-white" alt="">
+          </div>
+          <div class="d-flex justify-evenly">
+            <img src="assets/img/davinci.webp" class="col-2 round-5 p-1 bg-white" alt="">
+            <!-- <img src="assets/img/drone.png" class="col-2 round-5 p-1 bg-white" alt=""> -->
+            <img src="assets/img/ableton.png" class="col-2 round-5 p-1 bg-white" alt="">
+          </div>
+        </div>
+      </div>
+      <div id="workPic" class="col-6 d-none d-block-lg bg-darker-grey">
+      </div>
+    </section>
+    <!-- REEL -->
+    <section class="py-5 text-center">
+      <iframe class="responsive-iframe" src="https://www.youtube.com/embed/YDCRlYpKQfc" title="YouTube video player"
+        frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen></iframe>
+    </section>
+    <!-- CONTATTI -->
+    <section id="contacts" class="bg-black py-5 text-center text-left-md">
+      <h2 class="h2 text-center color-white">Contatti</h2>
+      <div class="row align-center justify-evenly">
+        <p class="col-10 col-4-md mb-3 body1 color-white">
+          Puoi contattarmi per espormi la tua idea o prendere un appuntamento tramite mail, cellulare o whatsapp.
+        </p>
+        <address class="col-10 col-4-md mb-3 color-white">
+          <h4 class="mb-1">EMAIL</h4>
+          <p class="mb-2"><a class="color-white" href="mailto:alexpileri@gmail.com">alexpileri@gmail.com</a></p>
+          <h4 class="mb-1">CELLULARE</h4>
+          <p class="mb-2"><a class="color-white" href="tel:+393456177042">+39 345 6177042</a></p>
+          <h4 class="mb-1">INDIRIZZO</h4>
+          <p class="text-underline mb-2">Arzachena 07021 (SS)</p>
+        </address>
+      </div>
+    </section>
+
+
+  </main>
+
+  <footer class="d-flex flex-column position-relative justify-evenly align-center py-3 bg-main-shade">
+    <p class="mb-2">&copy;2022 Alex Pileri</p>
+    <ul id="footerList" class="d-flex justify-evenly mb-2">
+      <li>
+        <a href="mailto:@gmail.com" target="_blank"><i class="bi bi-envelope-fill"></i></a>
+      </li>
+      <!-- <li>
+    <a href="" target="_blank"><i class="bi bi-linkedin"></i></a>
+   </li> -->
+      <li>
+        <a href="https://www.instagram.com/alexpileri92229/" target="_blank"><i class="bi bi-instagram"></i></a>
+      </li>
+      <li>
+        <a href="https://www.youtube.com/channel/UCW8iLU_qKfkm6md29odKKYw" target="_blank"><i
+            class="bi bi-youtube"></i></i></a>
+      </li>
+    </ul>
+    <p>Made with <i class="bi bi-heart-fill"></i> by: Alfredo Filigheddu</p>
+  </footer>
+  <div class="position-sticky bottom-0 py-1 bg-main-shade text-center">
+    <p class="body2">Contattami per un preventivo <a href="mailto:@gmail.com" target="_blank"
+        class="color-main-vibrant"><i class="bi bi-envelope-fill"></i></a></p>
   </div>
-
 </body>
 
 </html>

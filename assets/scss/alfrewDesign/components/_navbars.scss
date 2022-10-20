@@ -107,13 +107,13 @@
     color: $main-text-contrast;
 
     &:hover {
-      border-bottom: 5px solid $darker-grey;
+      border-bottom: 5px solid $main-color;
     }
   }
 }
 .nav-link.active {
-  color: $darker-grey;
-  border-bottom: 5px solid $darker-grey;
+  color: $main-color;
+  border-bottom: 5px solid $main-color;
 }
 
 @each $point in $points {
