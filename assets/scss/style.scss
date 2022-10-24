@@ -10,15 +10,18 @@
   min-height: 300px;
 }
 
-.navbar-expand {
+.navbar-expand-side-lg {
   background-color: black;
   color: white;
-  .nav-item a,
-  a {
+  .nav-link,
+  .nav-brand {
     color: white;
   }
   .dot {
     background-color: $main-color-shade-transpa;
+  }
+  .navbar-collapse-side {
+    background-color: black;
   }
   .line1,
   .line2,
